@@ -1,12 +1,10 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
 const whatsappMessage =
-  "Hi Nivethitha, I saw your website and would like to enquire about your makeup services.";
+  "Hi Jothi, I saw your website and would like to enquire about your makeup services.";
 
 const whatsappUrl = `https://wa.me/919500292511?text=${encodeURIComponent(
   whatsappMessage,
@@ -50,17 +48,17 @@ export default function FinalCTA() {
               : "translate-y-[20px] opacity-0"
           }`}
         >
-          <Image
-            src="/images/cta4.jpg"
-            alt="Bridal makeup by Nivethitha Makeover Artistry"
-            fill
-            sizes="(max-width: 767px) 82vw, (max-width: 1024px) 75vw, 48vw"
-            className="object-cover"
+          <img
+            src="/images/cta.webp"
+            alt="Bridal makeup by Jothi Arumugam of Makeover by Jo"
+            loading="lazy"
+            decoding="async"
+            className="absolute inset-0 h-full w-full object-cover"
           />
 
           <div className="absolute bottom-[32px] left-[32px] max-[767px]:bottom-[22px] max-[767px]:left-[22px]">
             <p className="font-body text-[9px] font-medium uppercase leading-[15px] tracking-[2px] text-[#F8F5F0] max-[767px]:text-[8px] max-[767px]:tracking-[1.6px]">
-              NIVETHITHA MAKEOVER ARTISTRY
+              MAKEOVERBYJO
             </p>
           </div>
         </div>

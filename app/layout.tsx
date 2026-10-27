@@ -21,9 +21,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Nivethitha Makeover Artistry",
+  title: "Makeover by Jo | Jothi Arumugam",
   description:
-    "Bridal makeup, hairstyling, saree draping and nail artistry by Nivethitha Makeover Artistry.",
+    "Discover bridal makeup, hairstyling, and saree draping by Jothi Arumugam of Makeover by Jo. Thoughtful beauty styling for weddings and special occasions.",
 };
 
 export default function RootLayout({
@@ -32,8 +32,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${italiana.variable} ${dmSerifDisplay.variable} ${manrope.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth">
+      <body
+        className={`${italiana.variable} ${dmSerifDisplay.variable} ${manrope.variable}`}
+      >
         {children}
       </body>
     </html>

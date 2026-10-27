@@ -1,12 +1,11 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const whatsappMessage =
-  "Hi Nivethitha, I saw your website and would like to enquire about your makeup services.";
+  "Hi Jothi, I saw your website and would like to enquire about your makeup services.";
 
 const whatsappUrl = `https://wa.me/919500292511?text=${encodeURIComponent(
   whatsappMessage,
@@ -37,7 +36,7 @@ export default function Hero() {
         }`}
       >
         <p className="font-body text-[11px] font-semibold uppercase leading-[18px] tracking-[2.2px] text-[#76506A] max-[767px]:text-[10px] max-[767px]:leading-[17px] max-[767px]:tracking-[1.8px]">
-          MUA • HAIR • DRAPING • NAILS
+          MUA • HAIR • DRAPING
         </p>
 
         <h1 className="mt-[24px] font-display text-[68px] font-normal leading-[0.98] tracking-[-1.5px] text-[#3B1F35] max-[1200px]:text-[60px] max-[1024px]:text-[62px] max-[767px]:mt-[20px] max-[767px]:text-[48px] max-[767px]:leading-[1] max-[767px]:tracking-[-1px]">
@@ -49,9 +48,9 @@ export default function Hero() {
         </h1>
 
         <p className="mt-[27px] w-[445px] font-body text-[15px] font-normal leading-[25px] text-[#76506A] max-[767px]:mt-[22px] max-[767px]:w-full max-[767px]:max-w-[460px] max-[767px]:text-[14px] max-[767px]:leading-[23px]">
-          From flawless bridal makeup to hair, saree draping and finishing
-          details, every element is thoughtfully styled to create a look that
-          feels beautifully, unmistakably you.
+          From flawless bridal makeup to hair and saree draping, every element
+          is thoughtfully styled to create a look that feels beautifully,
+          unmistakably you.
         </p>
 
         {/* CTA Buttons */}
@@ -99,15 +98,15 @@ export default function Hero() {
         {/* Mobile Sage Block */}
         <div className="absolute bottom-[-25px] left-[-25px] z-0 hidden h-[420px] w-[300px] bg-[#DCE3D8] max-[767px]:block" />
 
-        {/* Image */}
+        {/* Original Image */}
         <div className="absolute right-0 top-0 z-10 h-full w-full overflow-hidden">
-          <Image
-            src="/images/hero.jpg"
-            alt="Bridal makeup by Nivethitha Makeover Artistry"
-            fill
-            sizes="(max-width: 767px) 88vw, (max-width: 1024px) 420px, (max-width: 1200px) 400px, 435px"
-            priority
-            className="object-cover"
+          <img
+            src="/images/hero.webp"
+            alt="Bridal makeup by Jothi Arumugam"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>

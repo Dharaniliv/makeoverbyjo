@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -9,10 +8,9 @@ const specialties = [
   "Makeup Artist",
   "Hair Stylist",
   "Saree Drapist",
-  "Nail Artistry",
 ];
 
-export default function MeetNivethitha() {
+export default function MeetJothi() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const [visible, setVisible] = useState(false);
 
@@ -66,14 +64,14 @@ export default function MeetNivethitha() {
           {/* Sage Block */}
           <div className="absolute -bottom-[25px] -left-[25px] h-[420px] w-[350px] bg-[#DCE3D8] max-[1024px]:h-[400px] max-[1024px]:w-[330px] max-[767px]:-bottom-[20px] max-[767px]:-left-[20px] max-[767px]:h-[370px] max-[767px]:w-[285px]" />
 
-          {/* Image */}
+          {/* Original Image */}
           <div className="absolute left-[35px] top-0 h-[520px] w-[350px] overflow-hidden max-[1024px]:left-[35px] max-[1024px]:h-[500px] max-[1024px]:w-[350px] max-[767px]:left-[25px] max-[767px]:h-[470px] max-[767px]:w-[calc(100%-25px)]">
-            <Image
-              src="/images/nivethitha.jpg"
-              alt="Nivethitha - Makeup Artist"
-              fill
-              sizes="(max-width: 767px) calc(100vw - 49px), (max-width: 1024px) 350px, 350px"
-              className="object-cover"
+            <img
+              src="/images/jothi.webp"
+              alt="Jothi Arumugam - Makeup Artist"
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
@@ -92,27 +90,31 @@ export default function MeetNivethitha() {
           </p>
 
           <h2 className="mt-[20px] max-w-[500px] font-display text-[48px] font-normal leading-[1.05] tracking-[-0.8px] text-[#3B1F35] max-[1024px]:text-[46px] max-[767px]:mt-0 max-[767px]:text-[40px] max-[767px]:leading-[1.05] max-[767px]:tracking-[-0.6px]">
-            I want you to feel
+            Beauty with care,
             <br />
-            <span className="text-[#76506A]">beautifully yourself.</span>
+            <span className="text-[#76506A]">styled just for you.</span>
           </h2>
 
           <p className="mt-[28px] max-w-[520px] font-body text-[15px] font-normal leading-[26px] text-[#76506A] max-[767px]:mt-[23px] max-[767px]:text-[14px] max-[767px]:leading-[24px]">
-            I believe makeup should enhance who you are, not hide it. My
-            approach is simple, I take the time to understand you, your style
-            and the way you want to feel on your special day.
+            With 7 years of experience in makeup artistry, I believe every
+            look should enhance your natural beauty and reflect who you are.
+            I take the time to understand your style and how you want to feel
+            on your special day.
           </p>
 
           <p className="mt-[15px] max-w-[520px] font-body text-[15px] font-normal leading-[26px] text-[#76506A] max-[767px]:mt-[13px] max-[767px]:text-[14px] max-[767px]:leading-[24px]">
-            From the makeup and hair to the saree drape and the smallest
-            finishing detail, I love bringing every part of your look together
-            so that when you see yourself, it still feels completely you.
+            From makeup and hairstyling to saree draping, I bring every detail
+            together with care to create a look that feels timeless,
+            beautiful, and unmistakably you.
           </p>
 
           {/* Specialties */}
           <div className="mt-[32px] flex flex-wrap items-center gap-x-[20px] gap-y-[8px] border-t border-[#76506A]/20 pt-[18px] max-[767px]:mt-[27px] max-[767px]:justify-center max-[767px]:gap-x-[12px] max-[767px]:gap-y-[8px] max-[767px]:pt-[17px]">
             {specialties.map((specialty, index) => (
-              <div key={specialty} className="flex items-center gap-[20px] max-[767px]:gap-[12px]">
+              <div
+                key={specialty}
+                className="flex items-center gap-[20px] max-[767px]:gap-[12px]"
+              >
                 <span className="font-body text-[12px] font-medium uppercase leading-[20px] tracking-[0.7px] text-[#3B1F35] max-[767px]:text-[10px] max-[767px]:tracking-[0.5px]">
                   {specialty}
                 </span>
@@ -129,7 +131,7 @@ export default function MeetNivethitha() {
             href="/developing"
             className="group mt-[32px] flex h-[48px] w-[190px] items-center justify-center gap-[8px] rounded-[6px] bg-[#3B1F35] !text-[#F8F5F0] font-body text-[11px] font-semibold uppercase leading-[24px] tracking-[1px] transition-colors duration-250 hover:bg-[#76506A] max-[767px]:mx-auto max-[767px]:mt-[28px]"
           >
-            <span className="!text-[#F8F5F0]">MEET NIVETHITHA</span>
+            <span className="!text-[#F8F5F0]">MEET JOTHI</span>
 
             <ArrowUpRight
               size={16}

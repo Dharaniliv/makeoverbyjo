@@ -22,7 +22,7 @@ export default function Developing() {
 
           <p className="mt-[28px] max-w-[500px] font-body text-[15px] font-normal leading-[25px] text-[#76506A] max-[767px]:mt-[22px] max-[767px]:text-[14px] max-[767px]:leading-[23px]">
             This page is currently being developed. Please check back soon to
-            explore more of Nivethitha Makeover Artistry.
+            explore more of Makeover by Jo.
           </p>
 
           <Link

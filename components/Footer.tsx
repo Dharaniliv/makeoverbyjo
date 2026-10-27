@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 
 const quickLinks = [
   { name: "Home", href: "/" },
-  { name: "Meet Nivethitha", href: "/developing" },
+  { name: "Meet Jothi", href: "/developing" },
   { name: "Services", href: "/developing" },
   { name: "Portfolio", href: "/developing" },
   { name: "Contact", href: "/developing" },
@@ -11,13 +11,12 @@ const quickLinks = [
 
 const services = [
   "Bridal Makeup",
-  "Hair stylist",
-  "Saree drapist",
-  "Nail Services",
+  "Hair Stylist",
+  "Saree Draping",
 ];
 
 const whatsappMessage =
-  "Hi Nivethitha, I saw your website and would like to enquire about your makeup services.";
+  "Hi Jothi, I saw your website and would like to enquire about your makeup services.";
 
 const whatsappUrl = `https://wa.me/919500292511?text=${encodeURIComponent(
   whatsappMessage,
@@ -26,15 +25,15 @@ const whatsappUrl = `https://wa.me/919500292511?text=${encodeURIComponent(
 const connectLinks = [
   {
     name: "Instagram",
-    href: "https://www.instagram.com/nivethithamakeoverartistry",
+    href: "https://www.instagram.com/makeoverbyjo",
   },
   {
-    name: "Whatsapp",
+    name: "WhatsApp",
     href: whatsappUrl,
   },
   {
-    name: "Youtube",
-    href: "https://www.youtube.com/@anishnive",
+    name: "Facebook",
+    href: "https://www.facebook.com/makeoverbyjo",
   },
   {
     name: "Start An Enquiry",
@@ -53,8 +52,8 @@ export default function Footer() {
               href="/"
               className="flex flex-col items-start max-[767px]:items-center"
             >
-              <span className="font-logo text-[50px] font-normal leading-[45px] tracking-[4px] text-[#F8F5F0] max-[767px]:text-[40px] max-[767px]:leading-[38px] max-[767px]:tracking-[3.2px]">
-                NIVETHITHA
+              <span className="font-logo text-[40px] font-normal leading-[40px] tracking-[2.5px] text-[#F8F5F0] max-[767px]:text-[32px] max-[767px]:leading-[32px] max-[767px]:tracking-[1.8px]">
+                MAKEOVERBYJO
               </span>
 
               <span className="mt-[5px] font-body text-[15px] font-normal leading-[19px] tracking-[2.4px] text-[#F8F5F0]/30 max-[767px]:text-[11px] max-[767px]:leading-[16px] max-[767px]:tracking-[1.8px]">
@@ -136,22 +135,22 @@ export default function Footer() {
 
           <div className="mt-[27px] flex items-center justify-between max-[767px]:flex-col max-[767px]:gap-[15px] max-[767px]:text-center">
             <p className="font-body text-[10px] font-normal leading-[15px] tracking-[1.8px] text-[#F8F5F0]/80 max-[767px]:text-[8px] max-[767px]:leading-[13px] max-[767px]:tracking-[1.4px]">
-              © 2026 NIVETHITHA MAKEOVER ARTISTRY
+              © 2026 MAKEOVERBYJO
             </p>
 
-            <div className="flex items-center gap-[7px] font-body text-[10px] font-normal leading-[15px] tracking-[1.8px] text-[#F8F5F0]/80 max-[767px]:text-[8px] max-[767px]:leading-[13px] max-[767px]:tracking-[1.4px]">
-              <a
-                href="https://www.instagram.com/nivethithamakeoverartistry"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Nivethitha Makeover Artistry on Instagram"
-                className="transition-opacity duration-200 hover:opacity-70"
-              >
-                <FaInstagram size={13} />
-              </a>
+           <div className="flex items-center gap-[7px] font-body text-[10px] font-normal leading-[15px] tracking-[1.8px] text-[#F8F5F0]/80 max-[767px]:text-[8px] max-[767px]:leading-[13px] max-[767px]:tracking-[1.4px]">
+  <a
+    href="https://www.instagram.com/makeoverbyjo"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Makeover by Jo on Instagram"
+    className="transition-opacity duration-200 hover:opacity-70"
+  >
+    <FaInstagram size={13} />
+  </a>
 
-              <span>MUA • HAIR • DRAPING • NAILS</span>
-            </div>
+  <span>MUA • HAIR • DRAPING</span>
+</div>
           </div>
         </div>
       </div>

@@ -7,24 +7,24 @@ import { useEffect, useRef, useState } from "react";
 
 const galleryImages = [
   {
-    src: "/images/gallery-1.jpg",
-    alt: "Bridal beauty by Nivethitha Makeover Artistry",
+    src: "/images/gallery-1.webp",
+    alt: "Bridal beauty by Makeover by Jo",
   },
   {
     src: "/images/gallery-2.jpg",
-    alt: "Bridal makeup by Nivethitha Makeover Artistry",
+    alt: "Bridal makeup by Jothi Arumugam",
   },
   {
     src: "/images/gallery-3.jpg",
-    alt: "Bridal makeup by Nivethitha Makeover Artistry",
+    alt: "Bridal makeup by Makeover by Jo",
   },
   {
     src: "/images/gallery-4.jpg",
-    alt: "Bridal hair styling by Nivethitha Makeover Artistry",
+    alt: "Bridal hair styling by Jothi Arumugam",
   },
   {
     src: "/images/gallery-5.jpg",
-    alt: "Bridal beauty look by Nivethitha Makeover Artistry",
+    alt: "Bridal beauty look by Makeover by Jo",
   },
 ];
 
@@ -99,6 +99,7 @@ export default function GalleryPreview() {
               alt={galleryImages[0].alt}
               fill
               sizes="50vw"
+              quality={100}
               loading="eager"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -113,6 +114,7 @@ export default function GalleryPreview() {
               alt={galleryImages[1].alt}
               fill
               sizes="25vw"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -127,6 +129,7 @@ export default function GalleryPreview() {
               alt={galleryImages[2].alt}
               fill
               sizes="25vw"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -141,6 +144,7 @@ export default function GalleryPreview() {
               alt={galleryImages[3].alt}
               fill
               sizes="25vw"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -155,6 +159,7 @@ export default function GalleryPreview() {
               alt={galleryImages[4].alt}
               fill
               sizes="25vw"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -178,6 +183,7 @@ export default function GalleryPreview() {
               alt={galleryImages[0].alt}
               fill
               sizes="calc(100vw - 48px)"
+              quality={100}
               loading="eager"
               className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -192,6 +198,7 @@ export default function GalleryPreview() {
               alt={galleryImages[1].alt}
               fill
               sizes="calc((100vw - 56px) / 2)"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -206,6 +213,7 @@ export default function GalleryPreview() {
               alt={galleryImages[2].alt}
               fill
               sizes="calc((100vw - 56px) / 2)"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -220,6 +228,7 @@ export default function GalleryPreview() {
               alt={galleryImages[3].alt}
               fill
               sizes="calc((100vw - 56px) / 2)"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
@@ -234,6 +243,7 @@ export default function GalleryPreview() {
               alt={galleryImages[4].alt}
               fill
               sizes="calc((100vw - 56px) / 2)"
+              quality={100}
               loading="lazy"
               className="object-cover object-center transition-transform duration-700 ease-out group-hover:scale-[1.035]"
             />
